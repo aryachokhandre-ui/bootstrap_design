@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/svg">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="logo"><img src="Photu/white-logo.svg" alt=""></div>
+            <div class="links" style="margin-left: 80px;">
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div>
+                <button class="kebab-menu-btn" aria-label="More options" id="btn1"> &vellip; </button>
+            </div>
+            <div class="side-menu" id="sideMenu">
+
+               <span class="close-btn" onclick="closeMenu()">×</span>
+
+                 <div class="menu-content">
+
+                    <h1><img src="Photu/logo.black.svg" alt="..."></h1>
+
+                       <p>
+                         Lorem ipsum dolor sit amet adipisicing elit. Sapiente fuga nisi rerum iusto intro.
+                       </p>
+
+                   <h5 style="font-weight: 500;">Quick Links</h5>
+
+                      <div class="menu-links">
+                          <a href="#">About Us</a>
+                          <a href="#">Our Team</a>
+                          <a href="#">Latest News</a>
+                          <a href="#">Contact Us</a>
+                      </div>
+        
+                    <h5 style="margin-top: 20px;">follow us on</h5>
+                    <div style="margin-top: 20px; display: flex; justify-content:left; gap: 30px; color: gray;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                 <p style="font-size: 44px; font-weight: 700; color: aliceblue;">Corporate & Business Site <br> Template by Ayro UI.</p>
+                 <p id="p1">We are a digital agency that helps brands to achieve their business outcomes. We <br> see technology as a tool to create amazing things.</p>
+                 <button id="btn2">GET STARTED</button><button id="btn3">▶</button><a href="#" onclick="openVideo()" style="font-weight: 700; font-weight: bold;">Watch Intro</a>
+                </div>
+                <div id="videoPopup">
+                <span id="closeBtn" onclick="closeVideo()">✖</span>
+                <iframe 
+                 width="700"
+                 height="400"
+                 src="https://www.youtube.com/embed/r44RKWyfcFw?autoplay=1"
+                 allowfullscreen>
+                </iframe>
+                </div>
+                <div class="col-6">
+                 <img src="Photu/hero-image.jpg" alt="..." height="540px" width="650" id="img1">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container1">
+            <div class="row align-item-center">
+                <div class="col-6">
+                    <img src="Photu/about-img1.jpg" alt="..." height="580px" width="550px" id="img2">
+                </div>
+                <div class="col-6">
+                    <h6 class="small-title text-lg" style="font-weight:600; font-size: 20px; margin-top: 50px; margin-bottom: 30px;">OUR STORY</h6>
+                    <h2 style="font-weight: 700; margin-bottom: 40px;">Our team comes with the <br> experience and knowledge</h2>
+                    <div id="struct" class="btn-container">
+                        <button onclick="ChangeText(this)" class="btn active">Who Are We</button> <button onclick="ChangeText(this)" class="btn">Our Vision</button> <button onclick="ChangeText(this)" class="btn">Our History</button>
+                    </div>
+                    <p id="demo">It is a long established fact that a reader will be distracted by the readable <br>
+                                 content of a page when looking at its layout. The point of using Lorem Ipsum <br> 
+                                 is that it has a more-or-less normal distribution of letters, look like readable <br> English. <br>
+                                 There are many variations of passages of Lorem Ipsum available, but the <br>
+                                 majority have in some form, by injected humour.</p>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container2">
+            <div class="service-header">
+                <button id="btn4">services</button>
+                <h2 style="font-weight: 700; margin-top: 30px; margin-bottom: 30px;">Our Best Services</h2>
+                <p id="demo">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="row" id="row1">
+                <div class="col-4">
+                    <div class="single-service">
+                        <div class="logo1"><i class="bi bi-capsule" id="icon"></i></div>
+                        <div class="service-content">
+                            <h4 style="margin-top: 30px; margin-left: 30px; font-weight:600; font-size: 20px;">Refreshing Design</h4>
+                            <p id="dem1">Lorem ipsum dolor sit amet, adipscing elitr, <br> sed diam nonumy eirmod tempor ividunt labor <br> dolore magna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="single-service">
+                        <div class="logo1"><i class="bi bi-bootstrap" id="icon"></i></div>
+                        <div class="service-content">
+                            <h4 style="margin-top: 30px; margin-left: 30px; font-weight:600; font-size: 20px;">Solid bootstrap 5</h4>
+                            <p id="dem1">Lorem ipsum dolor sit amet, adipscing elitr,<br> sed diam nonumy eirmod tempor ividunt labor <br> dolore magna.</p>
+                        </div>
+                        </div>
+
+                </div>
+                <div class="col-4">
+                    <div class="single-service">
+                        <div class="logo1"><i class="bi bi-code-slash" id="icon"></i></div>
+                        <div class="service-content">
+                            <h4 style="margin-top: 30px; margin-left: 30px; font-weight:600; font-size: 20px;">100 + component</h4>
+                            <p id="dem1">Lorem ipsum dolor sit amet, adipscing elitr, <br> sed diam nonumy eirmod tempor ividunt labor <br> dolore magna.</p>
+                        </div>
+                        </div>
+
+                </div>
+            </div>
+            <div class="row" id="row1">
+               <div class="col-4">
+                <div class="single-service">
+                        <div class="logo1"><i class="bi bi-speedometer2" id="icon"></i></div>
+                        <div class="service-content">
+                            <h4 style="margin-top: 30px; margin-left: 30px; font-weight:600; font-size: 20px;">Speed optimization</h4>
+                            <p id="dem1">Lorem ipsum dolor sit amet, adipscing elitr, <br> sed diam nonumy eirmod tempor ividunt labor dolore magna.</p>
+                        </div>
+                        </div>
+
+               </div>
+               <div class="col-4">
+                <div class="single-service">
+                        <div class="logo1"><i class="bi bi-layers" id="icon"></i></div>
+                        <div class="service-content">
+                            <h4 style="margin-top: 30px; margin-left: 30px; font-weight:600; font-size: 20px;">Fully customizable</h4>
+                            <p id="dem1">Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy eirmod tempor ividunt labor <br> dolore magna.</p>
+                        </div>
+                        </div>
+
+               </div>
+               <div class="col-4">
+                <div class="single-service">
+                        <div class="logo1"><i class="bi bi-arrow-repeat" id="icon"></i></div>
+                        <div class="service-content">
+                            <h4 style="margin-top: 30px; margin-left: 30px; font-weight:600; font-size: 20px;">Regular update</h4>
+                            <p id="dem1">Lorem ipsum dolor sit amet, adipscing elitr, <br> sed diam nonumy eirmod tempor ividunt labor <br> dolore magna.</p>
+                        </div>
+                        </div>
+
+               </div> 
+            </div>
+        </div>
+        <div class="container3">
+           <div class="service-header">
+                <button id="btn5">our intro video</button>
+                <h2 style="font-weight: 700; margin-top: 30px; margin-bottom: 30px;">Watch your promo video</h2>
+                <p id="demo">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration in some form.</p>
+            </div> 
+            <img>
+                <img src="Photu/video-bg.jpg" alt="..." id="img3">
+                 <button id="btn6" onclick="openVideo()">▶</button>
+                <div id="videoPopup">
+                <span id="closeBtn" onclick="closeVideo()">✖</span>
+                <iframe 
+                 width="700"
+                 height="400"
+                 src="https://www.youtube.com/embed/r44RKWyfcFw?autoplay=1"
+                 allowfullscreen>
+                </iframe>
+                </div>            
+                </img>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="service-header">
+                <button id="btn7">our portfolio</button>
+                <h2 style="font-weight: 700; margin-top: 30px; margin-bottom: 30px;">Our Recent work</h2>
+                <p id="demo">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration in some form.</p>
+            </div>
+            <div class="container4">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="portfolio-menu text-center">
+                            <button data-filter="all" class="btn8 active" onclick="ChangeImage1()">All work</button>
+                            <button data-filter="branding" class="btn8" onclick="ChangeImage2()">Branding</button>
+                            <button data-filter="marketing" class="btn8" onclick="ChangeImage3()">marketing</button>
+                            <button data-filter="planing" class="btn8" onclick="ChangeImage4()">planing</button>
+                            <button data-filter="research" class="btn8" onclick="ChangeImage5()">Research</button>
+                        </div>
+                    </div>
+                </div>
+              <div id="shuffle">
+                <div class="row" style="margin-bottom: 80px;">
+                    <div class="col-4">
+                     <div class="wrapper">
+                       <img src="Photu/pf1.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Graphic Design</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                       <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                     </div>
+                    </div>
+                    <div class="col-4">
+                       <img src="Photu/pf2.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Web Development</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                        <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+
+                    </div>
+                    <div class="col-4">
+                       <img src="Photu/pf3.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">App Development</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                        <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 50px;">
+                    <div class="col-4">
+                       <img src="Photu/pf4.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Digital Marketing</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                        <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                    <div class="col-4">
+                       <img src="Photu/pf5.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">SEO services</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                        <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                    <div class="col-4">
+                       <img src="Photu/pf6.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Product Design</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                        <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+    </section>
+    <section id="pricing" style="background-color: #fafafa;">
+       <div class="service-header">
+                <button id="btn9">Pricing</button>
+                <h2 style="font-weight: 700; margin-top: 30px; margin-bottom: 30px;">Pricing & Plans</h2>
+                <p id="demo">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration in some form.</p>
+            </div> 
+            <div class="container5">
+                <div class="card1">
+                  <div class="card-contain">
+                  <p id="p3">starter</p>
+                  <p id="demo">Lorem Ipsum is simply dummy text of the <br> printing and industry.</p>
+                  <p style="font-size: 41px; font-weight: bold; margin-top: 40px;"><sup>$</sup>0<sub>/mo</sub></p>
+                  <button id="but1">start free trial</button>
+                  </div>
+                  <ol type="i">
+                    <li>Cras justo odio.</li>
+                    <li> Dapibus ac facilisis in.</li>
+                    <li> Morbi leo risus.</li>
+                    <li>Excepteur sint occaecat velit</li>
+                  </ol>
+                </div>
+                <div class="card2">
+                 <div class="card-contain">
+                  <p id="p3">Exclusive</p>
+                  <p id="demo">Lorem Ipsum is simply dummy text of the <br> printing and industry.</p>
+                  <p style="font-size: 41px; font-weight: bold; margin-top: 40px;"><sup>$</sup>99<sub>/mo</sub></p>
+                  <button id="but2">start free trial</button>
+                 </div>
+                  <ol type="i">
+                    <li>Cras justo odio.</li>
+                    <li> Dapibus ac facilisis in.</li>
+                    <li> Morbi leo risus.</li>
+                    <li>Excepteur sint occaecat velit</li>
+                  </ol>
+                </div>
+                <div class="card3">
+                 <div class="card-contain">
+                  <p id="p3">Premium</p>
+                  <p id="demo">Lorem Ipsum is simply dummy text of the <br> printing and industry.</p>
+                  <p style="font-size: 41px; font-weight: bold; margin-top: 40px;"><sup>$</sup>150<sub>/mo</sub></p>
+                  <button id="but1">start free trial</button>
+                  </div>
+                  <ol type="i">
+                    <li>Cras justo odio.</li>
+                    <li> Dapibus ac facilisis in.</li>
+                    <li> Morbi leo risus.</li>
+                    <li>Excepteur sint occaecat velit</li>
+                  </ol>  
+                </div>
+            </div>
+    </section>
+    <section id="team">
+         <div class="service-header">
+                <button id="btn9">Our team</button>
+                <h2 style="font-weight: 700; margin-top: 30px; margin-bottom: 30px;">our creative team</h2>
+                <p id="demo">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration in some form.</p>
+            </div> 
+            <div class="container6">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="image">
+                            <img src="Photu/team-1.jpg" alt="..." height="410px" width="400px">
+                        </div>
+                        <!-- <div class="content-emoji">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" id="team-emoji" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" id="team-emoji" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" id="team-emoji" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" id="team-emoji" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                        </div> -->
+                        <div class="content">
+                            <h4>jeffery railey</h4>
+                            <span>Art director</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="image">
+                            <img src="Photu/team-2.jpg" alt="..." height="410px" width="400px">
+                        </div>
+                        <div class="content">
+                            <h4>railey beata</h4>
+                            <span>Web developer</span>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="image">
+                            <img src="Photu/team-3.jpg" alt="..." height="410px" width="400px" >
+                        </div>
+                        <div class="content">
+                            <h4>Mark alone</h4>
+                            <span>UX designer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="call-action" class="call-action">
+        <div class="container7">
+            <div class="call-contain">
+            <h2 style="font-size: 2.2em; line-height: 1.25;">We love to make perfect <br>
+                solutions for your business</h2>
+                <p id="para1">Why I say old chap that is, spiffing off his nut cor blimey guvnords geeza <br>
+                   bloke knees up bobby, sloshed arse William cack Richard. Bloke fanny around <br> 
+                   chesed of bum bag old lost the pilot say there spiffing off his nut.</p>
+                   <div class="btn-rounded">GET STARTED</div>
+                   </div>
+        </div>
+    </section>
+    <section id="news">
+        <div class="service-header">
+                <button id="btn9">Lastest news</button>
+                <h2 style="font-weight: 700; margin-top: 30px; margin-bottom: 30px;">Latest News & Blog</h2>
+                <p id="demo">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration in some form.</p>
+            </div> 
+            <div class="container8">
+                <div class="row">
+                    <div class="col-4" id="newrow">
+                        <img src="Photu/new1.jpg" alt="..." height="300px" width="415px" id="newimg">
+                        <h4 style="margin-top: 30px; margin-bottom: 30px; font-weight: 600;">Make your team a design driven company</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and  typesetting  industry. Lorem Ipsum has been <br>  the industry's standard.</p>
+                    </div>
+                    <div class="col-4" id="newrow">
+                        <img src="Photu/new2.jpg" alt="..." height="300px" width="415px" id="newimg">
+                        <h4 style="margin-top: 30px; margin-bottom: 30px; font-weight: 600;">The latest framework that changed the world</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and  typesetting  industry. Lorem Ipsum has been <br>  the industry's standard.</p>
+                    </div>
+                    <div class="col-4" id="newrow">
+                        <img src="Photu/new3.jpg" alt="..." height="300px" width="415px" id="newimg">
+                        <h4 style="margin-top: 30px; margin-bottom: 30px; font-weight: 600;">Five ways to improve user retention for your startup</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the <br> industry's standard.</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <div class="container9" style="background-color: #fafafa; padding-bottom: 60px;">
+        <div class="service-header">
+                <button id="btn9">Meet our client</button>
+                <h2 style="font-weight: 700; margin-top: 30px; margin-bottom: 30px;">our Awesome client</h2>
+                <p id="demo">There are many variations of passages of Lorem Ipsum available, but <br> the majority have suffered alteration in some form.</p>
+            </div> 
+            <div class="row" style="margin-left: 430px; margin-top: 80px;">
+                <div class="col-4" style="height: 117px; width: 221px;" id="client1">
+                   <img src="Photu/client1.svg" alt="..." height="40px" width="170px" style="margin-top: 35px; margin-left: 10px;">
+                </div>
+                <div class="col-4" style="height: 117px; width: 201px;" id="client2" >
+                   <img src="Photu/client2.svg" alt="..." height="40px" width="150px" style="margin-top: 35px; margin-left: 10px;">
+
+                </div>
+                <div class="col-4" style="height: 117px; width: 211px;" id="client3">
+                  <img src="Photu/client3.svg" alt="..." height="41px" width="160px" style="margin-top: 35px; margin-left: 10px;">
+
+                </div>
+            </div>
+            <div class="row" style="margin-left: 460px;">
+                <div class="col-4" style="height:117px ; width: 221px;" id="client4">
+                   <img src="Photu/client4.svg" alt="..." height="30px" width="170px" style="margin-top: 35px; margin-left: 10px;">
+
+                </div>
+                <div class="col-4"style="height: 117px; width: 178px;" id="client5">
+                   <img src="Photu/client5.svg" alt="..." height="44px" width="127px" style="margin-top: 35px; margin-left: 10px;">
+
+                </div>
+                <div class="col-4" style="height: 117px; width: 178px;" id="client6">
+                   <img src="Photu/client6.svg" alt="..." height="33px" width="127px" style="margin-top: 35px; margin-left: 10px;">
+
+                </div>
+            </div>
+    </div>
+    <section id="contact" style="padding-bottom: 50px;">
+        <div class="container10">
+         <div class="row">
+            <div class="col-6" style="width: 500px;">
+                <div class="contact" style="height: 130px; width: 420px; border: 1px solid lightgray;">
+                    <div class="conticone"><i class="bi bi-telephone-fill"></i></div>
+                    <div>
+                        <h4 style="font-size: 20px; margin-bottom: 10px; color: rgb(35, 86, 255); margin-top: 10px;">contact</h4>
+                        <p id="contactpara">0984537278623 <br> yourmail@gmail.com</p>
+                    </div>
+
+                </div>
+                <div class="address" style="height: 130px; width: 420px; border: 1px solid lightgray; ">
+                    <div class="conticone"><i class="bi bi-geo-alt-fill"></i></div>
+                    <div>
+                        <h4 style="font-size: 20px; margin-bottom: 10px; color: rgb(35, 86, 255); margin-top: 10px;">Address</h4>
+                         <p id="addresspara">175 5th Ave, New York, NY 10010 <br>United States</p>
+                    </div>
+                </div>
+                <div class="schedule" style="height: 130px; width: 420px; border: 1px solid lightgray;">
+                   <div class="conticone"><i class="bi bi-alarm-fill"></i></div>
+                   <div>
+                       <h4 style="font-size: 20px; margin-bottom: 10px; color: rgb(35, 86, 255); margin-top: 10px;">schedule</h4>
+                       <p id="schedulepara"> 24 Hours / 7 Days Open <br>Office time: 10 AM - 5:30 PM</p>
+                   </div>
+                </div>
+            </div>
+            <div class="col-6" id="form" style="width: 860px; margin-left: 60px; border: 1px solid lightgray; margin-top: 100px; border-radius: 10px; height: 660px;">
+                <div class="form">
+                    <div class="form-head">
+                        <h5 style="font-size: 20px; font-weight: 700; color:rgb(35, 86, 255);">Get in touch</h5>
+                        <h2 style="font-size: 2.25em; line-height: 1.25; font-weight: 600;">Ready To Get Started</h2>
+                        <p id="form-head-para1">At vero eos et accusamus et iusto odio dignissimos ducimus quiblanditiis <br> praesentium</p>
+                    </div>
+                    <input type="text" placeholder="Name" id="name"> <input type="email" placeholder="email" id="email"> <br>
+                    <input type="number" placeholder="phone" id="phone"> <input type="text" placeholder="subject" id="subject"> <br>
+                    <textarea name="message" id="message" placeholder="type message"></textarea> <br>
+                    <button id="message-button">send message</button>
+                </div>
+            </div>
+         </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="row" style="margin-left: 100px;">
+            <div class="col-3" style="height: 200px; width: 420px; margin-top: 100px;">
+                <img src="Photu/white-logo.svg" alt="">
+                <p id="footer-para" style="margin-top: 20px;">Making the world a better place through <br> constructing elegant hierarchies.
+                <br>
+                <br>
+                © 2024 Ayro UI. <br>
+                Designed and Developed by Ayro UI 
+                </p>
+            </div>
+            <div class="col-3" style="height: 192px; width: 195px; margin-top: 100px;">
+                <h5 style="margin-left: 40px; font-size: 30px; font-weight: bolder;">Solution</h5>
+                <ul style="list-style-type: none; margin-top: 20px;">
+                    <li style="color: white;">Marketing</li>
+                    <li style="color: white;">Analytics</li>
+                    <li style="color: white;">Commerce</li>
+                    <li style="color: white;">Insights</li>
+                </ul>
+            </div>
+            <div class="col-3" style="height: 192px; width: 200px; margin-top: 100px;">
+                <h5 style="margin-left: 40px; font-size: 30px; font-weight: bolder;">Support</h5>
+                <ul style="list-style-type: none; margin-top: 20px;">
+                    <li style="color: white;">Pricing</li>
+                    <li style="color: white;">Document</li>
+                    <li style="color: white;">Guide</li>
+                    <li style="color: white;">API status</li>
+                </ul>
+            </div>
+            <div class="col-3" style="height: 200px; width: 420px; margin-top: 100px; margin-left: 100px;">
+                <h5 style="margin-left: 40px; font-size: 30px; font-weight: bolder; ">Subscribe</h5>
+                <p style="margin-left:40px; margin-top: 20px;">Subscribe to our newsletter for the latest <br> updates</p>
+                <input type="email" placeholder="email" id="sub-email" required>
+            </div>
+        </div>
+    </section>
+    <script>
+   function ChangeText(button) {
+
+        let buttons = document.querySelectorAll(".btn");
+        buttons.forEach(btn => btn.classList.remove("active"));
+
+        button.classList.add("active");
+    
+        if (button.innerText === "Who Are We") {
+            document.getElementById("demo").innerHTML =
+                "This is Who Are We content <br> It is a long established fact that a reader will be distracted by the readable <br>content of a page when looking at its layout";
+        }
+
+        else if (button.innerText === "Our Vision") {
+            document.getElementById("demo").innerHTML =
+                "This is Our Vision content The point of using Lorem Ipsum <br> is that it has a more-or-less normal distribution of letters, look like readable <br> English";
+        }
+
+        else if (button.innerText === "Our History") {
+            document.getElementById("demo").innerHTML =
+                "This is Our History content There are many variations of passages of Lorem Ipsum available, but the majority have in some form, by injected humour";
+        }
+    }
+
+    
+    function openVideo() {
+    document.getElementById("videoPopup").style.display = "flex";
+    }
+
+    function closeVideo() {
+    document.getElementById("videoPopup").style.display = "none";
+    }
+
+    function ChangeImage1(){
+        document.getElementById("shuffle").innerHTML =`
+         <div class="row" style="margin-bottom: 80px;">
+                    <div class="col-4">
+                       <img src="Photu/pf1.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Graphic Design</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                       <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                    <div class="col-4">
+                       <img src="Photu/pf2.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Web Development</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                       <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                    <div class="col-4">
+                       <img src="Photu/pf3.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">App Development</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                       <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 50px;">
+                    <div class="col-4">
+                       <img src="Photu/pf4.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Digital Marketing</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                       <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                    <div class="col-4">
+                       <img src="Photu/pf5.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">SEO services</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                       <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                    <div class="col-4">
+                       <img src="Photu/pf6.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Product Design</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                       <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                </div>
+        `;
+    }
+    function ChangeImage2() {
+    document.getElementById("shuffle").innerHTML = `
+
+    <div class="row" style="margin-bottom: 80px;">
+        <div class="col-4">
+            <img src="Photu/pf1.jpg" height="280px" width="380px">
+            <h3 style="margin-top:15px;">Graphic Design</h3>
+            <p>Short description for the ones who look for something new. Awesome!</p>
+                       <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+        </div>
+
+        <div class="col-4">
+            <img src="Photu/pf4.jpg" height="280px" width="380px">
+            <h3 style="margin-top:15px;">Digital Marketing</h3>
+            <p>Short description for the ones who look for something new. Awesome!</p>
+                       <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+        </div>
+    </div>
+
+    `;
+    }
+    function ChangeImage3(){
+        document.getElementById("shuffle").innerHTML = `
+        <div class="row" style="margin-bottom: 80px;">
+           <div class="col-4">
+               <img src="Photu/pf3.jpg" alt="..." height="280px" width="380px">
+               <h3 style="margin-top: 15px;">App Development</h3>
+              <p>Short description for the ones who look for something new. Awesome!</p>
+                                     <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+            </div>
+              <div class="col-4">
+              <img src="Photu/pf6.jpg" alt="..." height="280px" width="380px">
+              <h3 style="margin-top: 15px;">Product Design</h3>
+              <p>Short description for the ones who look for something new. Awesome!</p>
+                                     <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+              </div>
+        </div>
+        `;
+    }
+    function ChangeImage4(){
+        document.getElementById("shuffle").innerHTML = `
+        <div class="row" style="margin-bottom: 50px;">
+                    <div class="col-4">
+                       <img src="Photu/pf4.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Digital Marketing</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                                              <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                </div>
+        `;
+    }
+    function ChangeImage5(){
+        document.getElementById("shuffle").innerHTML = `
+        <div class="row" style="margin-bottom: 80px;">
+             <div class="col-4">
+                       <img src="Photu/pf2.jpg" alt="..." height="280px" width="380px">
+                       <h3 style="margin-top: 15px;">Web Development</h3>
+                       <p>Short description for the ones who look for something new. Awesome!</p>
+                                              <div class="shuffle-hover">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link-45deg" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1 1 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4 4 0 0 1-.128-1.287z"/>
+                        <path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243z"/>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" id="wrapper-emogi" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11M13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                        <path d="M10.344 11.742q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1 6.5 6.5 0 0 1-1.398 1.4z"/>
+                        <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                       </div>
+                    </div>
+                 </div>   
+        `;
+    }
+    let btn = document.getElementById("btn1");
+    let menu = document.getElementById("sideMenu");
+
+    btn.onclick = function () {
+    menu.classList.add("active");
+    }
+
+    function closeMenu() {
+     menu.classList.remove("active");
+    }
+
+    </script>
+</body>
+</html>
